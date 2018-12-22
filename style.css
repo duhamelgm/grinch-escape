@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css?family=Mountains+of+Christmas|Thasadith");
+
+body {
+  margin: 0;
+  background: url("./assets/background.jpg");
+  font-family: "Mountains of Christmas", cursive;
+  overflow-y: hidden;
+}
+
+p {
+  font-family: "Thasadith", sans-serif;
+}
+
+main {
+  background: rgba(0, 0, 0, 0.5);
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-column-gap: 1.5rem;
+}
+
+button {
+  padding: 1.2rem 2.5rem;
+  border-radius: 1rem;
+  font-size: 2rem;
+  background: #ee6466;
+  color: #fff;
+  transition: background 500ms;
+  font-family: "Mountains of Christmas", cursive;
+}
+button:hover {
+  cursor: pointer;
+  transition: 500ms;
+  background: #b6484a;
+}
+button:focus {
+  outline: 0;
+}
+.deactive {
+  display: none !important;
+}
+
+.active {
+  display: initial;
+}
+
+#game-container {
+  margin: 1.5rem;
+  margin-right: 0;
+  align-self: center;
+  position: relative;
+}
+
+#game-container img {
+  width: 100%;
+  height: 100%;
+}
+
+#menu {
+  margin: 1.5rem;
+  padding: 1.5rem;
+  background: rgb(216, 235, 243);
+  font-size: 1.8rem;
+}
+
+#menu h3 {
+  margin-left: 1.5rem;
+}
+
+#main-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+#main-menu small {
+  align-self: flex-end;
+
+  font-family: "Thasadith", sans-serif;
+}
+
+#game-menu {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+#buttons-game-menu {
+  margin-top: auto;
+  display: flex;
+}
+
+#game-over {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  color: #eee;
+  font-size: 2rem;
+}
+
+#game-over.active {
+  display: flex;
+}

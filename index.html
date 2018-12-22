@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <div id="game-container">
+        <img id="start-image" class="active" src="./assets/grinch_escape.jpg" alt="" />
+        <div id="game-over">
+          <h1>GAME OVER</h1>
+          <h3>Puntuación total: <span id="score-game"></span></h3>
+        </div>
+      </div>
+      <div id="menu">
+        <div id="main-menu" class="active">
+          <h1>El escape del Grinch</h1>
+          <p>
+            El Grinch logró reunir todos los regalos de los Quién y ahora intenta escapar con ellos!
+          </p>
+          <p>
+            Tu objetivo es ayudarlo a bajar la montaña sin estrellarse, recolectando las estrellas
+            en el camino, pero ten cuidado, la montaña es muy empinada y mientras más distancia
+            recorras mas dificil será bajar la cuesta
+          </p>
+          <p>(Usa las flechas del teclado para moverte)</p>
+          <button id="start-button">Start</button> <small>Music by Adam Vitovsky</small>
+        </div>
+        <div id="game-menu" class="deactive">
+          <h1>Tu puntuación:</h1>
+          <h3>Distancia: <span id="distance"></span></h3>
+          <h3>Estrellas: <span id="stars"></span></h3>
+          <h3>Puntuación total: <span id="score"></span></h3>
+          <div id="buttons-game-menu">
+            <button id="restart-button">Reinicar</button>
+            <button id="back-button">Volver al menu</button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/addons/p5.sound.min.js"></script>
+    <script src="./classes.js"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>
